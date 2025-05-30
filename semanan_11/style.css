@@ -1,0 +1,35 @@
+header {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: slateblue;
+    color: #FFF;
+}
+main {
+    min-height: 75vh;
+}
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card img {
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    border-radius: 5px;
+}
+.card img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
