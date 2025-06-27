@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if( isset($_SESSION['nombre'])){
+        $usuario = $_SESSION['nombre']; 
+    } else {
+        $usuario = "";
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,5 +18,5 @@
 <body>
     <header>
         <h1> Peliculas</h1>
-        <p>Bienvendo <?php echo($usuario['nombre']); ?></p>
+        <p>Bienvendo <?php echo($usuario); ?></p>
     </header>
